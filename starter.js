@@ -1,28 +1,73 @@
-// Jed Finch
-// 24 April 2026
-// EVIDENCE: JS Functions
+// First and last name
+// Current date
+// Convert Traditional Functions to Arrow Functions
 
-function getBase() {
-   const base = parseFloat(prompt("enter the base here"));
-  
-   return base;
-    
+// TODO 1: Rewrite each traditional function as an arrow function
+// TODO 2: Then call each function and make sure the function works!
 
-}
-
-function getHeight() {
-    const height = parseFloat(prompt("enter the height here"));
+// Converts kilometers to miles
+// Traditional function
+// function convertToMiles(kilometers) {
+//   return kilometers * 0.621371;
+// }
  
-    return height 
-    
-}
 
-function triangleArea(base, height) {
-  const area = 0.5 * base * height;
-  return `the triangle with a base of ${base} ft and a height of ${height} ft has an area of ${area} sq. ft.`;
-}
+// Calculates perimeter of a rectangle
+// Traditional function
+// function calcRectPerimeter(length, width) {
+//   return 2 * (length + width);
+// }
 
-console.log(triangleArea(15,10));
+// Builds a product description using a template string
+// Traditional function
+//  function describeProduct(name, price) {
+//   return `The ${name} costs $${price.toFixed(2)}.`;
+//  }
+
+
+
+// TODO 3: REWRITE YOUR FUNCTIONS AS ARROW FUNCTIONS BELOW THIS LINE
+
+
+ 
+const convertToMiles = (kilometers)=> {
+  return kilometers * 0.621371;
+}
+//call function
+convertToMiles (50);
+
+
+const describeProduct = (guitar, price)=> {
+  return `The ${guitar} costs ${price.toFixed(2)}.`
+}
+ console.log(describeProduct('Strat', 1500));
+
+
+
+const showUserProfile = (name, age, city) => {
+ return `${name} is ${age} and lives in ${city}.`;
+
+}
+ console.log(showUserProfile('Bob', 'twenty', 'traverse'));
+// TODO 4: Use console.log() to display each function's output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
